@@ -222,11 +222,11 @@ section .title::after{
     /* height: 500px; */
 }
 .about .about-content .left img{
-    height: 450px;
+    height: 400px;
     width: 400px;
-    object-fit: cover;
-    border-radius: 3%;
-     
+    object-fit: contain;
+    border-radius:90%;
+    
 }
 .about .about-content .right{
     width: 55%;
@@ -382,7 +382,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: " github";
 }
 .teams .carousel .card{
     background: #222;
@@ -719,4 +719,19 @@ footer span a:hover{
 
 .animate__animated.animate__fadeIn {
     opacity: 1;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.column.left img {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Use "forwards" to persist at the final state */
 }
