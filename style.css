@@ -219,12 +219,13 @@ section .title::after{
 }
 .about .about-content .left{
     width: 45%;
+    /* height: 500px; */
 }
 .about .about-content .left img{
-    height: 400px;
+    height: 500px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 3%;
 }
 .about .about-content .right{
     width: 55%;
@@ -655,7 +656,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
+    about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
     }
@@ -677,4 +678,9 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+
+.round-profile {
+    border-radius: 50%;
 }
