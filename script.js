@@ -71,3 +71,32 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate__animated", "animate__fadeIn");
+
+                // Get the percentage from the span inside the progress bar
+                var percentage = parseInt(entry.target.querySelector('.info span:last-child').innerText);
+
+                // Set the width of the progress bar based on the percentage
+                entry.target.querySelector('.progress-bar').style.width = percentage + '%';
+            }
+        });
+    });
+
+    var progressBars = document.querySelectorAll(".bars");
+
+    progressBars.forEach(function (bar) {
+        observer.observe(bar);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var img = document.querySelector('.about-content .column.left img');
+    img.classList.add('fade-in');
+});

@@ -222,10 +222,11 @@ section .title::after{
     /* height: 500px; */
 }
 .about .about-content .left img{
-    height: 500px;
+    height: 450px;
     width: 400px;
     object-fit: cover;
     border-radius: 3%;
+     
 }
 .about .about-content .right{
     width: 55%;
@@ -681,6 +682,41 @@ footer span a:hover{
 }
 
 
-.round-profile {
+/* .round-profile {
     border-radius: 50%;
+}
+
+ /* Custom keyframes animation for moving the progress bars */
+ @keyframes moveIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the keyframes animation to the bars class */
+.bars.animate__animated.animate__fadeInUp {
+    animation: moveIn 1s ease-out;
+} */
+
+
+/* Add this style to your existing CSS */
+.bars {
+    opacity: 0; /* initially set opacity to 0 */
+}
+
+.progress-bar {
+    background-color: crimson; /* Set your desired progress bar color */
+    height: 25px; /* Set the height of the progress bar */
+    width: 0; /* Start with a width of 0, will be animated */
+    transition: width 1s ease; /* Animation transition effect */
+    border-radius: 10px;
+}
+
+.animate__animated.animate__fadeIn {
+    opacity: 1;
 }
