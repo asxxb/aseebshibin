@@ -735,3 +735,4 @@ footer span a:hover{
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards; /* Use "forwards" to persist at the final state */
 }
+
