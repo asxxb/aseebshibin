@@ -114,3 +114,29 @@ document.getElementById('check-link').addEventListener('click', function(event) 
         box.classList.remove('wobble');
     }, { once: true });
 });
+
+//circle
+
+
+
+
+const cursorDot = document.querySelector("[data-cursor-dot]")
+const cursorOutline = document.querySelector("[data-cursor-outline]")
+
+window.addEventListener("mousemove", function(e){
+  const posX = e.clientX;
+  const posY = e.clientY;
+  
+  cursorDot.style.left = `${posX}px`
+  cursorDot.style.top = `${posY}px`
+  
+  cursorOutline.style.left = `${posX}px`
+  cursorOutline.style.top = `${posY}px`
+  
+  cursorOutline.animate({
+    left: `${posX}px`,
+    top: `${posY}px`
+  }, {duration:500, fill:"backwards"})
+  
+  
+})
