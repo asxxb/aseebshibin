@@ -793,4 +793,9 @@ footer span a:hover{
     z-index:1;
     pointer-events:none;
   }
-  
+  /* Media query to disable cursor styles on mobile devices */
+  @media only screen and (max-width: 768px) {
+    .cursor-dot,
+    .cursor-outline {
+      display: none;
+    }}

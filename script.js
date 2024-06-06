@@ -140,3 +140,9 @@ window.addEventListener("mousemove", function(e){
   
   
 })
+
+
+
+//if for mobile
+
+
