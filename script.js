@@ -103,4 +103,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
- 
+
+document.getElementById('check-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    const box = document.querySelector('.card .box');
+    box.classList.add('wobble');
+
+    // Remove the wobble class after the animation ends
+    box.addEventListener('animationend', function() {
+        box.classList.remove('wobble');
+    }, { once: true });
+});

@@ -736,3 +736,21 @@ footer span a:hover{
     animation: fadeIn 1s ease-in-out forwards; /* Use "forwards" to persist at the final state */
 }
 
+
+
+
+@keyframes wobble {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    15%, 45%, 75% {
+        transform: translateX(-10px);
+    }
+    30%, 60%, 90% {
+        transform: translateX(10px);
+    }
+}
+
+.wobble {
+    animation: wobble 0.5s ease-in-out;
+}
