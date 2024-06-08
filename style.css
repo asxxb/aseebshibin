@@ -683,11 +683,7 @@ footer span a:hover{
 }
 
 
-/* .round-profile {
-    border-radius: 50%;
-}
 
- /* Custom keyframes animation for moving the progress bars */
  @keyframes moveIn {
     from {
         transform: translateX(-100%);
