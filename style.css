@@ -786,7 +786,8 @@ footer span a:hover{
     left:0;
     transform:translate(-50%, -50%);
     border-radius:50%;
-    z-index:1;
+    z-index: 10000;
+    
     pointer-events:none;
   }
   /* Media query to disable cursor styles on mobile devices */
@@ -841,4 +842,18 @@ footer span a:hover{
     
     .bars:hover {
         transform: scale(1.05); /* Zoom in a little bit */
+    }
+
+    .card:hover {
+        cursor: pointer;
+    }
+
+    a.linkhover {
+        color: rgb(99, 95, 95);
+        text-decoration: none; 
+       font-weight:bold;/* Optional: removes the underline from the link */
+    }
+    
+    a.linkhover:hover {
+        color: aqua; /* Change to your desired hover color */
     }
