@@ -851,7 +851,7 @@ footer span a:hover{
     a.linkhover {
         color: rgb(99, 95, 95);
         text-decoration: none; 
-       font-weight:bold;/* Optional: removes the underline from the link */
+       /* Optional: removes the underline from the link */
     }
     
     a.linkhover:hover {
